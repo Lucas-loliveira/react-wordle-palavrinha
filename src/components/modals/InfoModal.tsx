@@ -8,64 +8,55 @@ type Props = {
 
 export const InfoModal = ({ isOpen, handleClose }: Props) => {
   return (
-    <BaseModal title="How to play" isOpen={isOpen} handleClose={handleClose}>
+    <BaseModal title="Bem vinda, Mozin!" isOpen={isOpen} handleClose={handleClose}>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        Guess the word in 6 tries. After each guess, the color of the tiles will
-        change to show how close your guess was to the word.
+        Esse é <b>"Palavrinha"</b> o jogo que eu fiz para o meu amor. Jogo para que você joque todos os dias e lembre o quão importante é para mim.
+        </p>
+        
+        <p className="text-sm text-gray-500 dark:text-gray-300">
+        O jogo é igualzinho o term.ooo com a diferença que todos os dias (até onde eu consegui, desculpa) você terá que adivinhar Palavrinhas que me lembram você. 
+        </p>
+      <p className="text-sm text-gray-500 dark:text-gray-300">
+        Mas cuidado! Foram paravras que eu tirei da minha cabeça e por isso, pode ser que elas não respeitem a gramática normativa da lingua portuguesa.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
         <Cell
           isRevealing={true}
           isCompleted={true}
-          value="W"
+          value="E"
           status="correct"
         />
-        <Cell value="E" />
-        <Cell value="A" />
-        <Cell value="R" />
-        <Cell value="Y" />
+        <Cell value="U" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        The letter W is in the word and in the correct spot.
+      O "E" está certo
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
-        <Cell value="P" />
-        <Cell value="I" />
         <Cell
           isRevealing={true}
           isCompleted={true}
-          value="L"
+          value="T"
           status="present"
         />
-        <Cell value="O" />
-        <Cell value="T" />
-      </div>
-      <p className="text-sm text-gray-500 dark:text-gray-300">
-        The letter L is in the word but in the wrong spot.
-      </p>
-
-      <div className="flex justify-center mb-1 mt-4">
-        <Cell value="V" />
-        <Cell value="A" />
-        <Cell value="G" />
-        <Cell isRevealing={true} isCompleted={true} value="U" status="absent" />
         <Cell value="E" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        The letter U is not in the word in any spot.
+      O "T" está no lugar errado.
+      </p>
+
+      <div className="flex justify-center mb-1 mt-4">
+        <Cell value="A" />
+        <Cell value="M" />
+        <Cell isRevealing={true} isCompleted={true} value="O" status="absent" />
+      </div>
+      <p className="text-sm text-gray-500 dark:text-gray-300">
+      Não tem "O" na palavrinha.
       </p>
 
       <p className="mt-6 italic text-sm text-gray-500 dark:text-gray-300">
-        This is an open source version of the word guessing game we all know and
-        love -{' '}
-        <a
-          href="https://github.com/cwackerfuss/react-wordle"
-          className="underline font-bold"
-        >
-          check out the code here
-        </a>{' '}
+        Espero que goste S2
       </p>
     </BaseModal>
   )

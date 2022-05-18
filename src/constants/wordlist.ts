@@ -2,18 +2,20 @@ export const WORDS = [
   'luan',
   'Nenem',
   'porco',
+  'burro',
   'mozin',
   'niver',
   'vinho',
   'miojo',
-  'cubos',
-  'papou',
+  'cubo',
+  'papa',
   'psico',
   'Luan',
   'Vesgo',
   'peito',
-  'delicia',
-  'rolha'
+  'carta',
+  'pinto',
+  
 ]
 
 
