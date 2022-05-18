@@ -42,9 +42,9 @@ import { Navbar } from './components/navbar/Navbar'
 import { isInAppBrowser } from './lib/browser'
 
 function App() {
-  const prefersDarkMode = window.matchMedia(
-    '(prefers-color-scheme: dark)'
-  ).matches
+  const prefersDarkMode = true //window.matchMedia(
+  //  '(prefers-color-scheme: dark)'
+  //).matches
 
   const { showError: showErrorAlert, showSuccess: showSuccessAlert } =
     useAlert()

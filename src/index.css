@@ -8,15 +8,19 @@
   --default-cell-bg-color: theme('colors.white');
   --default-cell-border-color: theme('colors.black');
   --default-cell-text-color: theme('colors.black');
-  --absent-cell-bg-color: theme('colors.slate.400');
+  --absent-cell-bg-color: rgb(233, 139, 219);
   --correct-cell-bg-color: theme('colors.green.400');
   --present-cell-bg-color: theme('colors.yellow.400');
 }
 
 .dark {
-  --default-cell-bg-color: theme('colors.slate.900');
+  --default-cell-bg-color: rgb(
+    233,
+    139,
+    219
+  ); /* durante a trasição tem essa cor  */
   --default-cell-border-color: theme('colors.white');
-  --default-cell-text-color: theme('colors.white');
+  --default-cell-text-color: rgb(3, 0, 2);
   --absent-cell-bg-color: theme('colors.slate.700');
 }
 
