@@ -1,6 +1,7 @@
 export const WORDS = [
 'niver',
 'nenem',
+'sigla',
 'mozin',
 'vinho',
 'peito',
