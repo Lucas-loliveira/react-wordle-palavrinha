@@ -1,4 +1,4 @@
-export const GAME_TITLE = process.env.REACT_APP_GAME_NAME!
+export const GAME_TITLE = 'Palavrinha!'
 
 export const WIN_MESSAGES = ['Boa Mozin!', 'Você é muito boa!', 'Parabéns Mozin!']
 export const GAME_COPIED_MESSAGE = 'Compartilha mozin! '
