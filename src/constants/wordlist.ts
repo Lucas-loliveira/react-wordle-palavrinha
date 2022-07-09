@@ -1,439 +1,447 @@
-export const WORDS = ['pedal', 'vigas',
-'terra',
-'pegou',
-'atriz',
-'rouba',
-'plano',
-'burra',
-'torna',
-'vento',
-'vazou',
-'pombo',
-'musgo',
-'sunga',
-'humor',
-'bodas',
-'niver',
-'nenem',
-'sigla',
-'mozin',
-'vinho',
-'peito',
-'nanar',
-'gemer',
-'peido',
-'creme',
-'leite',
-'porco',
-'burro',
-'miojo',
-'psico',
-'Vesgo',
-'sopas',
-'lerdo',
-'burro',
-'bunda',
-'macho',
-'caldo',
-'doces',
-'porco',
-'celta',
-'zumbi',
-'cacho',
-'barba',
-'praia',
-'seios',
-'surda',
-'pinto',
-'calvo',
-'gozar',
-'corpo',
-'pizza',
-'carta',
-'pinto',
-'pisca',
-'bolor',
-'manto',
-'sorte',
-'puxar',
-'barro',
-'citar',
-'solta',
-'pesca',
-'olhos',
-'fungo',
-'molas',
-'salas',
-'veado',
-'luxos',
-'tutor',
-'papos',
-'pulso',
-'couve',
-'talas',
-'super',
-'punir',
-'calma',
-'rugir',
-'cones',
-'sarau',
-'abada',
-'casco',
-'claro',
-'julho',
-'limpo',
-'belas',
-'tombo',
-'reter',
-'tosar',
-'chata',
-'sinal',
-'cupim',
-'touro',
-'chope',
-'vetor',
-'serva',
-'salsa',
-'podem',
-'boato',
-'asilo',
-'ganso',
-'mitos',
-'diabo',
-'nadou',
-'molha',
-'cegos',
-'bocal',
-'carro',
-'fofas',
-'atlas',
-'azedo',
-'rimar',
-'pasta',
-'moita',
-'ecoar',
-'vejam',
-'negam',
-'frear',
-'falha',
-'tripa',
-'plena',
-'ferve',
-'crase',
-'fuzil',
-'fruta',
-'cores',
-'coroa',
-'pedal',
-'vigas',
-'terra',
-'pegou',
-'atriz',
-'rouba',
-'plano',
-'burra',
-'torna',
-'vento',
-'vazou',
-'pombo',
-'musgo',
-'sunga',
-'humor',
-'aguda',
-'corte',
-'ducha',
-'nozes',
-'brasa',
-'ursos',
-'vazam',
-'sujar',
-'raros',
-'molho',
-'russo',
-'grupo',
-'somem',
-'furar',
-'saias',
-'burla',
-'cerda',
-'braba',
-'adega',
-'visor',
-'sonhe',
-'reagi',
-'bruxo',
-'cotar',
-'rango',
-'ferro',
-'nunca',
-'finos',
-'campo',
-'peles',
-'telas',
-'cervo',
-'feios',
-'miras',
-'bravo',
-'bulbo',
-'polar',
-'votam',
-'monte',
-'tordo',
-'pedem',
-'bodas',
-'arara',
-'troco',
-'surto',
-'toses',
-'pagas',
-'antes',
-'idosa',
-'cauda',
-'lendo',
-'trama',
-'ritos',
-'ontem',
-'gerou',
-'criam',
-'cabos',
-'venda',
-'filha',
-'pixel',
-'tocou',
-'surra',
-'pense',
-'pleno',
-'corre',
-'linha',
-'noivo',
-'nesse',
-'usada',
-'mudas',
-'sabor',
-'limpe',
-'enfie',
-'solto',
-'farda',
-'febre',
-'ficha',
-'trapo',
-'mores',
-'caros',
-'tosco',
-'roles',
-'obeso',
-'cagar',
-'fitas',
-'varas',
-'gozam',
-'casar',
-'fiado',
-'gosta',
-'erros',
-'amigo',
-'longe',
-'neura',
-'nariz',
-'seiva',
-'barco',
-'autor',
-'bosta',
-'afoga',
-'natal',
-'bolsa',
-'leves',
-'couro',
-'times',
-'clube',
-'jogam',
-'grama',
-'ritmo',
-'bucha',
-'faixa',
-'morto',
-'aliar',
-'somas',
-'afago',
-'firme',
-'banco',
-'calos',
-'vulva',
-'fraca',
-'polpa',
-'vazar',
-'magra',
-'agito',
-'beber',
-'fusca',
-'corra',
-'galho',
-'massa',
-'cosmo',
-'dunas',
-'renas',
-'cobre',
-'sofro',
-'doado',
-'jogar',
-'piano',
-'becos',
-'subiu',
-'sovar',
-'hotel',
-'pesou',
-'errar',
-'golfe',
-'usava',
-'lerda',
-'fanho',
-'retal',
-'ratos',
-'dados',
-'lugar',
-'feito',
-'samba',
-'belga',
-'tocha',
-'vende',
-'bomba',
-'preta',
-'droga',
-'teses',
-'lucro',
-'lavar',
-'pelos',
-'pilha',
-'mutra',
-'obter',
-'prego',
-'papas',
-'fluxo',
-'delta',
-'loiro',
-'mugir',
-'turco',
-'tumba',
-'grife',
-'novos',
-'idoso',
-'chuva',
-'ouviu',
-'etapa',
-'lomba',
-'solda',
-'fenda',
-'tribo',
-'vocal',
-'larva',
-'treva',
-'morar',
-'tecla',
-'aviso',
-'cheio',
-'leste',
-'pista',
-'sucos',
-'pular',
-'gaita',
-'golpe',
-'colir',
-'abalo',
-'maior',
-'lacre',
-'sumiu',
-'viram',
-'farpa',
-'chame',
-'ureia',
-'crepe',
-'tropa',
-'motor',
-'chapa',
-'cinta',
-'pente',
-'cegar',
-'busca',
-'votem',
-'sumir',
-'picar',
-'dedos',
-'farol',
-'salve',
-'nicho',
-'muita',
-'praga',
-'corno',
-'povos',
-'chute',
-'exame',
-'sujam',
-'roupa',
-'broto',
-'favor',
-'nervo',
-'ombro',
-'velha',
-'museu',
-'leite',
-'credo',
-'pomba',
-'fauna',
-'verba',
-'fazer',
-'homem',
-'baixo',
-'loira',
-'ileso',
-'usado',
-'focar',
-'poeta',
-'lousa',
-'noiva',
-'linda',
-'pauta',
-'colar',
-'tumor',
-'aulas',
-'causa',
-'viver',
-'bioma',
-'salvo',
-'turvo',
-'zerar',
-'deusa',
-'padre',
-'rouca',
-'ponto',
-'dizer',
-'pisar',
-'calor',
-'nobre',
-'juros',
-'falsa',
-'bolso',
-'matar',
-'rocha',
-'corvo',
-'rosca',
-'tosse',
-'verme',
-'cinza',
-'fatos',
-'pinta',
-'banha',
-'louca',
-'livro',
-'mosca',
-'zelar',
-'fruto',
-'cesta',
-'poder',
-'cargo',
-'costa',
-'fecho',
-'vidro',
-'papai',
-'tempo'
-]
-
-
+export const WORDS = [
+    'pedal', // 01/06/2022 palavra numero:1
+    'vigas', // 02/06/2022 palavra numero:2
+    'terra', // 03/06/2022 palavra numero:3
+    'pegou', // 04/06/2022 palavra numero:4
+    'atriz', // 05/06/2022 palavra numero:5
+    'rouba', // 06/06/2022 palavra numero:6
+    'plano', // 07/06/2022 palavra numero:7
+    'burra', // 08/06/2022 palavra numero:8
+    'torna', // 09/06/2022 palavra numero:9
+    'vento', // 10/06/2022 palavra numero:10
+    'vazou', // 11/06/2022 palavra numero:11
+    'pombo', // 12/06/2022 palavra numero:12
+    'musgo', // 13/06/2022 palavra numero:13
+    'sunga', // 14/06/2022 palavra numero:14
+    'humor', // 15/06/2022 palavra numero:15
+    'bodas', // 16/06/2022 palavra numero:16
+    'niver', // 17/06/2022 palavra numero:17
+    'nenem', // 18/06/2022 palavra numero:18
+    'sigla', // 19/06/2022 palavra numero:19
+    'mozin', // 20/06/2022 palavra numero:20
+    'vinho', // 21/06/2022 palavra numero:21
+    'peito', // 22/06/2022 palavra numero:22
+    'nanar', // 23/06/2022 palavra numero:23
+    'gemer', // 24/06/2022 palavra numero:24
+    'peido', // 25/06/2022 palavra numero:25
+    'creme', // 26/06/2022 palavra numero:26
+    'leite', // 27/06/2022 palavra numero:27
+    'porco', // 28/06/2022 palavra numero:28
+    'burro', // 29/06/2022 palavra numero:29
+    'miojo', // 30/06/2022 palavra numero:30
+    'psico', // 01/07/2022 palavra numero:31
+    'Vesgo', // 02/07/2022 palavra numero:32
+    'sopas', // 03/07/2022 palavra numero:33
+    'lerdo', // 04/07/2022 palavra numero:34
+    'bunda', // 05/07/2022 palavra numero:35
+    'macho', // 06/07/2022 palavra numero:36
+    'caldo', // 07/07/2022 palavra numero:37
+    'doces', // 08/07/2022 palavra numero:38
+    'porco', // 09/07/2022 palavra numero:39
+    'celta', // 10/07/2022 palavra numero:40
+    'zumbi', // 11/07/2022 palavra numero:41
+    'cacho', // 12/07/2022 palavra numero:42
+    'barba', // 13/07/2022 palavra numero:43
+    'praia', // 14/07/2022 palavra numero:44
+    'seios', // 15/07/2022 palavra numero:45
+    'surda', // 16/07/2022 palavra numero:46
+    'pinto', // 17/07/2022 palavra numero:47
+    'calvo', // 18/07/2022 palavra numero:48
+    'gozar', // 19/07/2022 palavra numero:49
+    'corpo', // 20/07/2022 palavra numero:50
+    'pizza', // 21/07/2022 palavra numero:51
+    'Moana', // 22/07/2022 palavra numero:52
+    'Pudim', // 23/07/2022 palavra numero:53
+    'Vidas', // 24/07/2022 palavra numero:54
+    'pluto', // 25/07/2022 palavra numero:55
+    'Cerca', // 26/07/2022 palavra numero:56
+    'Gatos', // 27/07/2022 palavra numero:57
+    'Jogos', // 28/07/2022 palavra numero:58
+    'carta', // 29/07/2022 palavra numero:59
+    'pisca', // 30/07/2022 palavra numero:60
+    'bolor', // 31/07/2022 palavra numero:61
+    'manto', // 01/08/2022 palavra numero:62
+    'sorte', // 02/08/2022 palavra numero:63
+    'puxar', // 03/08/2022 palavra numero:64
+    'barro', // 04/08/2022 palavra numero:65
+    'citar', // 05/08/2022 palavra numero:66
+    'solta', // 06/08/2022 palavra numero:67
+    'pesca', // 07/08/2022 palavra numero:68
+    'olhos', // 08/08/2022 palavra numero:69
+    'fungo', // 09/08/2022 palavra numero:70
+    'molas', // 10/08/2022 palavra numero:71
+    'salas', // 11/08/2022 palavra numero:72
+    'veado', // 12/08/2022 palavra numero:73
+    'luxos', // 13/08/2022 palavra numero:74
+    'tutor', // 14/08/2022 palavra numero:75
+    'papos', // 15/08/2022 palavra numero:76
+    'pulso', // 16/08/2022 palavra numero:77
+    'couve', // 17/08/2022 palavra numero:78
+    'talas', // 18/08/2022 palavra numero:79
+    'super', // 19/08/2022 palavra numero:80
+    'punir', // 20/08/2022 palavra numero:81
+    'calma', // 21/08/2022 palavra numero:82
+    'rugir', // 22/08/2022 palavra numero:83
+    'cones', // 23/08/2022 palavra numero:84
+    'sarau', // 24/08/2022 palavra numero:85
+    'abada', // 25/08/2022 palavra numero:86
+    'casco', // 26/08/2022 palavra numero:87
+    'claro', // 27/08/2022 palavra numero:88
+    'julho', // 28/08/2022 palavra numero:89
+    'limpo', // 29/08/2022 palavra numero:90
+    'belas', // 30/08/2022 palavra numero:91
+    'tombo', // 31/08/2022 palavra numero:92
+    'reter', // 01/09/2022 palavra numero:93
+    'tosar', // 02/09/2022 palavra numero:94
+    'chata', // 03/09/2022 palavra numero:95
+    'sinal', // 04/09/2022 palavra numero:96
+    'cupim', // 05/09/2022 palavra numero:97
+    'touro', // 06/09/2022 palavra numero:98
+    'chope', // 07/09/2022 palavra numero:99
+    'vetor', // 08/09/2022 palavra numero:100
+    'serva', // 09/09/2022 palavra numero:101
+    'salsa', // 10/09/2022 palavra numero:102
+    'podem', // 11/09/2022 palavra numero:103
+    'boato', // 12/09/2022 palavra numero:104
+    'asilo', // 13/09/2022 palavra numero:105
+    'ganso', // 14/09/2022 palavra numero:106
+    'mitos', // 15/09/2022 palavra numero:107
+    'diabo', // 16/09/2022 palavra numero:108
+    'nadou', // 17/09/2022 palavra numero:109
+    'molha', // 18/09/2022 palavra numero:110
+    'cegos', // 19/09/2022 palavra numero:111
+    'bocal', // 20/09/2022 palavra numero:112
+    'carro', // 21/09/2022 palavra numero:113
+    'fofas', // 22/09/2022 palavra numero:114
+    'atlas', // 23/09/2022 palavra numero:115
+    'azedo', // 24/09/2022 palavra numero:116
+    'rimar', // 25/09/2022 palavra numero:117
+    'pasta', // 26/09/2022 palavra numero:118
+    'moita', // 27/09/2022 palavra numero:119
+    'ecoar', // 28/09/2022 palavra numero:120
+    'vejam', // 29/09/2022 palavra numero:121
+    'negam', // 30/09/2022 palavra numero:122
+    'frear', // 01/10/2022 palavra numero:123
+    'falha', // 02/10/2022 palavra numero:124
+    'tripa', // 03/10/2022 palavra numero:125
+    'plena', // 04/10/2022 palavra numero:126
+    'ferve', // 05/10/2022 palavra numero:127
+    'crase', // 06/10/2022 palavra numero:128
+    'fuzil', // 07/10/2022 palavra numero:129
+    'fruta', // 08/10/2022 palavra numero:130
+    'cores', // 09/10/2022 palavra numero:131
+    'coroa', // 10/10/2022 palavra numero:132
+    'pedal', // 11/10/2022 palavra numero:133
+    'vigas', // 12/10/2022 palavra numero:134
+    'terra', // 13/10/2022 palavra numero:135
+    'pegou', // 14/10/2022 palavra numero:136
+    'atriz', // 15/10/2022 palavra numero:137
+    'rouba', // 16/10/2022 palavra numero:138
+    'plano', // 17/10/2022 palavra numero:139
+    'burra', // 18/10/2022 palavra numero:140
+    'torna', // 19/10/2022 palavra numero:141
+    'vento', // 20/10/2022 palavra numero:142
+    'vazou', // 21/10/2022 palavra numero:143
+    'pombo', // 22/10/2022 palavra numero:144
+    'musgo', // 23/10/2022 palavra numero:145
+    'sunga', // 24/10/2022 palavra numero:146
+    'humor', // 25/10/2022 palavra numero:147
+    'aguda', // 26/10/2022 palavra numero:148
+    'corte', // 27/10/2022 palavra numero:149
+    'ducha', // 28/10/2022 palavra numero:150
+    'nozes', // 29/10/2022 palavra numero:151
+    'brasa', // 30/10/2022 palavra numero:152
+    'ursos', // 31/10/2022 palavra numero:153
+    'vazam', // 01/11/2022 palavra numero:154
+    'sujar', // 02/11/2022 palavra numero:155
+    'raros', // 03/11/2022 palavra numero:156
+    'molho', // 04/11/2022 palavra numero:157
+    'russo', // 05/11/2022 palavra numero:158
+    'grupo', // 06/11/2022 palavra numero:159
+    'somem', // 07/11/2022 palavra numero:160
+    'furar', // 08/11/2022 palavra numero:161
+    'saias', // 09/11/2022 palavra numero:162
+    'burla', // 10/11/2022 palavra numero:163
+    'cerda', // 11/11/2022 palavra numero:164
+    'braba', // 12/11/2022 palavra numero:165
+    'adega', // 13/11/2022 palavra numero:166
+    'visor', // 14/11/2022 palavra numero:167
+    'sonhe', // 15/11/2022 palavra numero:168
+    'reagi', // 16/11/2022 palavra numero:169
+    'bruxo', // 17/11/2022 palavra numero:170
+    'cotar', // 18/11/2022 palavra numero:171
+    'rango', // 19/11/2022 palavra numero:172
+    'ferro', // 20/11/2022 palavra numero:173
+    'nunca', // 21/11/2022 palavra numero:174
+    'finos', // 22/11/2022 palavra numero:175
+    'campo', // 23/11/2022 palavra numero:176
+    'peles', // 24/11/2022 palavra numero:177
+    'telas', // 25/11/2022 palavra numero:178
+    'cervo', // 26/11/2022 palavra numero:179
+    'feios', // 27/11/2022 palavra numero:180
+    'miras', // 28/11/2022 palavra numero:181
+    'bravo', // 29/11/2022 palavra numero:182
+    'bulbo', // 30/11/2022 palavra numero:183
+    'polar', // 01/12/2022 palavra numero:184
+    'votam', // 02/12/2022 palavra numero:185
+    'monte', // 03/12/2022 palavra numero:186
+    'tordo', // 04/12/2022 palavra numero:187
+    'pedem', // 05/12/2022 palavra numero:188
+    'bodas', // 06/12/2022 palavra numero:189
+    'arara', // 07/12/2022 palavra numero:190
+    'troco', // 08/12/2022 palavra numero:191
+    'surto', // 09/12/2022 palavra numero:192
+    'toses', // 10/12/2022 palavra numero:193
+    'pagas', // 11/12/2022 palavra numero:194
+    'antes', // 12/12/2022 palavra numero:195
+    'idosa', // 13/12/2022 palavra numero:196
+    'cauda', // 14/12/2022 palavra numero:197
+    'lendo', // 15/12/2022 palavra numero:198
+    'trama', // 16/12/2022 palavra numero:199
+    'ritos', // 17/12/2022 palavra numero:200
+    'ontem', // 18/12/2022 palavra numero:201
+    'gerou', // 19/12/2022 palavra numero:202
+    'criam', // 20/12/2022 palavra numero:203
+    'cabos', // 21/12/2022 palavra numero:204
+    'venda', // 22/12/2022 palavra numero:205
+    'filha', // 23/12/2022 palavra numero:206
+    'pixel', // 24/12/2022 palavra numero:207
+    'tocou', // 25/12/2022 palavra numero:208
+    'surra', // 26/12/2022 palavra numero:209
+    'pense', // 27/12/2022 palavra numero:210
+    'pleno', // 28/12/2022 palavra numero:211
+    'corre', // 29/12/2022 palavra numero:212
+    'linha', // 30/12/2022 palavra numero:213
+    'noivo', // 31/12/2022 palavra numero:214
+    'nesse', // 01/01/2023 palavra numero:215
+    'usada', // 02/01/2023 palavra numero:216
+    'mudas', // 03/01/2023 palavra numero:217
+    'sabor', // 04/01/2023 palavra numero:218
+    'limpe', // 05/01/2023 palavra numero:219
+    'enfie', // 06/01/2023 palavra numero:220
+    'solto', // 07/01/2023 palavra numero:221
+    'farda', // 08/01/2023 palavra numero:222
+    'febre', // 09/01/2023 palavra numero:223
+    'ficha', // 10/01/2023 palavra numero:224
+    'trapo', // 11/01/2023 palavra numero:225
+    'mores', // 12/01/2023 palavra numero:226
+    'caros', // 13/01/2023 palavra numero:227
+    'tosco', // 14/01/2023 palavra numero:228
+    'roles', // 15/01/2023 palavra numero:229
+    'obeso', // 16/01/2023 palavra numero:230
+    'cagar', // 17/01/2023 palavra numero:231
+    'fitas', // 18/01/2023 palavra numero:232
+    'varas', // 19/01/2023 palavra numero:233
+    'gozam', // 20/01/2023 palavra numero:234
+    'casar', // 21/01/2023 palavra numero:235
+    'fiado', // 22/01/2023 palavra numero:236
+    'gosta', // 23/01/2023 palavra numero:237
+    'erros', // 24/01/2023 palavra numero:238
+    'amigo', // 25/01/2023 palavra numero:239
+    'longe', // 26/01/2023 palavra numero:240
+    'neura', // 27/01/2023 palavra numero:241
+    'nariz', // 28/01/2023 palavra numero:242
+    'seiva', // 29/01/2023 palavra numero:243
+    'barco', // 30/01/2023 palavra numero:244
+    'autor', // 31/01/2023 palavra numero:245
+    'bosta', // 01/02/2023 palavra numero:246
+    'afoga', // 02/02/2023 palavra numero:247
+    'natal', // 03/02/2023 palavra numero:248
+    'bolsa', // 04/02/2023 palavra numero:249
+    'leves', // 05/02/2023 palavra numero:250
+    'couro', // 06/02/2023 palavra numero:251
+    'times', // 07/02/2023 palavra numero:252
+    'clube', // 08/02/2023 palavra numero:253
+    'jogam', // 09/02/2023 palavra numero:254
+    'grama', // 10/02/2023 palavra numero:255
+    'ritmo', // 11/02/2023 palavra numero:256
+    'bucha', // 12/02/2023 palavra numero:257
+    'faixa', // 13/02/2023 palavra numero:258
+    'morto', // 14/02/2023 palavra numero:259
+    'aliar', // 15/02/2023 palavra numero:260
+    'somas', // 16/02/2023 palavra numero:261
+    'afago', // 17/02/2023 palavra numero:262
+    'firme', // 18/02/2023 palavra numero:263
+    'banco', // 19/02/2023 palavra numero:264
+    'calos', // 20/02/2023 palavra numero:265
+    'vulva', // 21/02/2023 palavra numero:266
+    'fraca', // 22/02/2023 palavra numero:267
+    'polpa', // 23/02/2023 palavra numero:268
+    'vazar', // 24/02/2023 palavra numero:269
+    'magra', // 25/02/2023 palavra numero:270
+    'agito', // 26/02/2023 palavra numero:271
+    'beber', // 27/02/2023 palavra numero:272
+    'fusca', // 28/02/2023 palavra numero:273
+    'corra', // 01/03/2023 palavra numero:274
+    'galho', // 02/03/2023 palavra numero:275
+    'massa', // 03/03/2023 palavra numero:276
+    'cosmo', // 04/03/2023 palavra numero:277
+    'dunas', // 05/03/2023 palavra numero:278
+    'renas', // 06/03/2023 palavra numero:279
+    'cobre', // 07/03/2023 palavra numero:280
+    'sofro', // 08/03/2023 palavra numero:281
+    'doado', // 09/03/2023 palavra numero:282
+    'jogar', // 10/03/2023 palavra numero:283
+    'piano', // 11/03/2023 palavra numero:284
+    'becos', // 12/03/2023 palavra numero:285
+    'subiu', // 13/03/2023 palavra numero:286
+    'sovar', // 14/03/2023 palavra numero:287
+    'hotel', // 15/03/2023 palavra numero:288
+    'pesou', // 16/03/2023 palavra numero:289
+    'errar', // 17/03/2023 palavra numero:290
+    'golfe', // 18/03/2023 palavra numero:291
+    'usava', // 19/03/2023 palavra numero:292
+    'lerda', // 20/03/2023 palavra numero:293
+    'fanho', // 21/03/2023 palavra numero:294
+    'retal', // 22/03/2023 palavra numero:295
+    'ratos', // 23/03/2023 palavra numero:296
+    'dados', // 24/03/2023 palavra numero:297
+    'lugar', // 25/03/2023 palavra numero:298
+    'feito', // 26/03/2023 palavra numero:299
+    'samba', // 27/03/2023 palavra numero:300
+    'belga', // 28/03/2023 palavra numero:301
+    'tocha', // 29/03/2023 palavra numero:302
+    'vende', // 30/03/2023 palavra numero:303
+    'bomba', // 31/03/2023 palavra numero:304
+    'preta', // 01/04/2023 palavra numero:305
+    'droga', // 02/04/2023 palavra numero:306
+    'teses', // 03/04/2023 palavra numero:307
+    'lucro', // 04/04/2023 palavra numero:308
+    'lavar', // 05/04/2023 palavra numero:309
+    'pelos', // 06/04/2023 palavra numero:310
+    'pilha', // 07/04/2023 palavra numero:311
+    'mutra', // 08/04/2023 palavra numero:312
+    'obter', // 09/04/2023 palavra numero:313
+    'prego', // 10/04/2023 palavra numero:314
+    'papas', // 11/04/2023 palavra numero:315
+    'fluxo', // 12/04/2023 palavra numero:316
+    'delta', // 13/04/2023 palavra numero:317
+    'loiro', // 14/04/2023 palavra numero:318
+    'mugir', // 15/04/2023 palavra numero:319
+    'turco', // 16/04/2023 palavra numero:320
+    'tumba', // 17/04/2023 palavra numero:321
+    'grife', // 18/04/2023 palavra numero:322
+    'novos', // 19/04/2023 palavra numero:323
+    'idoso', // 20/04/2023 palavra numero:324
+    'chuva', // 21/04/2023 palavra numero:325
+    'ouviu', // 22/04/2023 palavra numero:326
+    'etapa', // 23/04/2023 palavra numero:327
+    'lomba', // 24/04/2023 palavra numero:328
+    'solda', // 25/04/2023 palavra numero:329
+    'fenda', // 26/04/2023 palavra numero:330
+    'tribo', // 27/04/2023 palavra numero:331
+    'vocal', // 28/04/2023 palavra numero:332
+    'larva', // 29/04/2023 palavra numero:333
+    'treva', // 30/04/2023 palavra numero:334
+    'morar', // 01/05/2023 palavra numero:335
+    'tecla', // 02/05/2023 palavra numero:336
+    'aviso', // 03/05/2023 palavra numero:337
+    'cheio', // 04/05/2023 palavra numero:338
+    'leste', // 05/05/2023 palavra numero:339
+    'pista', // 06/05/2023 palavra numero:340
+    'sucos', // 07/05/2023 palavra numero:341
+    'pular', // 08/05/2023 palavra numero:342
+    'gaita', // 09/05/2023 palavra numero:343
+    'golpe', // 10/05/2023 palavra numero:344
+    'colir', // 11/05/2023 palavra numero:345
+    'abalo', // 12/05/2023 palavra numero:346
+    'maior', // 13/05/2023 palavra numero:347
+    'lacre', // 14/05/2023 palavra numero:348
+    'sumiu', // 15/05/2023 palavra numero:349
+    'viram', // 16/05/2023 palavra numero:350
+    'farpa', // 17/05/2023 palavra numero:351
+    'chame', // 18/05/2023 palavra numero:352
+    'ureia', // 19/05/2023 palavra numero:353
+    'crepe', // 20/05/2023 palavra numero:354
+    'tropa', // 21/05/2023 palavra numero:355
+    'motor', // 22/05/2023 palavra numero:356
+    'chapa', // 23/05/2023 palavra numero:357
+    'cinta', // 24/05/2023 palavra numero:358
+    'pente', // 25/05/2023 palavra numero:359
+    'cegar', // 26/05/2023 palavra numero:360
+    'busca', // 27/05/2023 palavra numero:361
+    'votem', // 28/05/2023 palavra numero:362
+    'sumir', // 29/05/2023 palavra numero:363
+    'picar', // 30/05/2023 palavra numero:364
+    'dedos', // 31/05/2023 palavra numero:365
+    'farol', // 01/06/2023 palavra numero:366
+    'salve', // 02/06/2023 palavra numero:367
+    'nicho', // 03/06/2023 palavra numero:368
+    'muita', // 04/06/2023 palavra numero:369
+    'praga', // 05/06/2023 palavra numero:370
+    'corno', // 06/06/2023 palavra numero:371
+    'povos', // 07/06/2023 palavra numero:372
+    'chute', // 08/06/2023 palavra numero:373
+    'exame', // 09/06/2023 palavra numero:374
+    'sujam', // 10/06/2023 palavra numero:375
+    'roupa', // 11/06/2023 palavra numero:376
+    'broto', // 12/06/2023 palavra numero:377
+    'favor', // 13/06/2023 palavra numero:378
+    'nervo', // 14/06/2023 palavra numero:379
+    'ombro', // 15/06/2023 palavra numero:380
+    'velha', // 16/06/2023 palavra numero:381
+    'museu', // 17/06/2023 palavra numero:382
+    'leite', // 18/06/2023 palavra numero:383
+    'credo', // 19/06/2023 palavra numero:384
+    'pomba', // 20/06/2023 palavra numero:385
+    'fauna', // 21/06/2023 palavra numero:386
+    'verba', // 22/06/2023 palavra numero:387
+    'fazer', // 23/06/2023 palavra numero:388
+    'homem', // 24/06/2023 palavra numero:389
+    'baixo', // 25/06/2023 palavra numero:390
+    'loira', // 26/06/2023 palavra numero:391
+    'ileso', // 27/06/2023 palavra numero:392
+    'usado', // 28/06/2023 palavra numero:393
+    'focar', // 29/06/2023 palavra numero:394
+    'poeta', // 30/06/2023 palavra numero:395
+    'lousa', // 01/07/2023 palavra numero:396
+    'noiva', // 02/07/2023 palavra numero:397
+    'linda', // 03/07/2023 palavra numero:398
+    'pauta', // 04/07/2023 palavra numero:399
+    'colar', // 05/07/2023 palavra numero:400
+    'tumor', // 06/07/2023 palavra numero:401
+    'aulas', // 07/07/2023 palavra numero:402
+    'causa', // 08/07/2023 palavra numero:403
+    'viver', // 09/07/2023 palavra numero:404
+    'bioma', // 10/07/2023 palavra numero:405
+    'salvo', // 11/07/2023 palavra numero:406
+    'turvo', // 12/07/2023 palavra numero:407
+    'zerar', // 13/07/2023 palavra numero:408
+    'deusa', // 14/07/2023 palavra numero:409
+    'padre', // 15/07/2023 palavra numero:410
+    'rouca', // 16/07/2023 palavra numero:411
+    'ponto', // 17/07/2023 palavra numero:412
+    'dizer', // 18/07/2023 palavra numero:413
+    'pisar', // 19/07/2023 palavra numero:414
+    'calor', // 20/07/2023 palavra numero:415
+    'nobre', // 21/07/2023 palavra numero:416
+    'juros', // 22/07/2023 palavra numero:417
+    'falsa', // 23/07/2023 palavra numero:418
+    'bolso', // 24/07/2023 palavra numero:419
+    'matar', // 25/07/2023 palavra numero:420
+    'rocha', // 26/07/2023 palavra numero:421
+    'corvo', // 27/07/2023 palavra numero:422
+    'rosca', // 28/07/2023 palavra numero:423
+    'tosse', // 29/07/2023 palavra numero:424
+    'verme', // 30/07/2023 palavra numero:425
+    'cinza', // 31/07/2023 palavra numero:426
+    'fatos', // 01/08/2023 palavra numero:427
+    'pinta', // 02/08/2023 palavra numero:428
+    'banha', // 03/08/2023 palavra numero:429
+    'louca', // 04/08/2023 palavra numero:430
+    'livro', // 05/08/2023 palavra numero:431
+    'mosca', // 06/08/2023 palavra numero:432
+    'zelar', // 07/08/2023 palavra numero:433
+    'fruto', // 08/08/2023 palavra numero:434
+    'cesta', // 09/08/2023 palavra numero:435
+    'poder', // 10/08/2023 palavra numero:436
+    'cargo', // 11/08/2023 palavra numero:437
+    'costa', // 12/08/2023 palavra numero:438
+    'fecho', // 13/08/2023 palavra numero:439
+    'vidro', // 14/08/2023 palavra numero:440
+    'papai', // 15/08/2023 palavra numero:441
+    'tempo', // 16/08/2023 palavra numero:442
+    ]
+    
+    
+    
